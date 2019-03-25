@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def get_dots():
+
     # RGB colors
     mag = [(125,0,255),(255,0,255)]
     red =[(200,0,0),(255,100,100)]
@@ -40,3 +41,5 @@ def get_dots():
 
         # save images
         cv2.imwrite('outputs/'+str(m)+'_dots.png',target)
+
+    print('The images has been saved.\n')

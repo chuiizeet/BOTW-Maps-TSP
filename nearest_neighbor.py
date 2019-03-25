@@ -13,6 +13,7 @@ def display(img,d):
     ax = fig.add_subplot(111)
     plt.title('Distance = '+str(d))
     ax.imshow(img)
+    plt.show()
 
 def draw_tsp(map,d,tsp,points):
     copy_map = map.copy()
