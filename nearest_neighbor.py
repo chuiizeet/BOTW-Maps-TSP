@@ -109,8 +109,8 @@ def nearest_neightbor(inputMap):
         # Distance
         distance = sum(eu)
 
-        # Draw lines
-        draw_tsp(map_rgb,distance,tsp,points)
+        # Draw lines (All routes)
+        #draw_tsp(map_rgb,distance,tsp,points)
 
         # Best distance & tour
         global best_distance, best_tour
@@ -134,3 +134,6 @@ def nearest_neightbor(inputMap):
     print('--------------------')
     for r in best_tour:
         print(points[r])
+
+    # Print optimal tour
+    draw_tsp(map_rgb,best_distance,best_tour,points)

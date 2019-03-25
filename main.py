@@ -21,4 +21,4 @@ elif m == '1':
 elif m == '2':
     nn(m)
 else:
-    print('Invalid Iput')
+    print('Invalid Input')
